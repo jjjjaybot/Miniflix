@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 const TabDoor = () => {
     return ( 
         <svg 
-        class="tab-icon-door" 
+        className="tab-icon-door" 
         xmlns="http://www.w3.org/2000/svg" 
         id="icon-cancel" viewBox="0 0 40 48" 
         focusable="true" 

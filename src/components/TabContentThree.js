@@ -4,6 +4,7 @@ import {Button} from './Button';
 import {Icon} from 'react-icons-kit';
 import {cross} from 'react-icons-kit/icomoon/cross';
 import {checkmark} from 'react-icons-kit/icomoon/checkmark';
+import {generateMedia} from 'styled-media-query';
 
 
 
@@ -17,7 +18,7 @@ const TabContentThree = () => {
                 </div>
                 {/* Tab Bottom Content */}
                 <div className="tab-bottom-content">
-                    <table>
+                    <table style={{width:'100%'}}>
                         <thead>
                             <tr>
                                 <th></th>
@@ -79,6 +80,13 @@ const TabContentThree = () => {
  
 export default TabContentThree;
 
+//Media
+const customMedia = generateMedia({
+    lgDesktop: '1350px',
+    mdDesktop:'1000px',
+    tablet: '600px',
+})
+
 // Main Container
 const TabContainer = styled.div`
     background: var(--main-deep-dark);
@@ -86,22 +94,39 @@ const TabContainer = styled.div`
     .tab-content {
         margin: 0 15%;
         padding-bottom: 1%;
+        ${customMedia.lessThan('tablet')`
+        margin: 0%;
+        `}
+
     }
 
     .tab-top-content {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         padding: 3rem 0 0;
+        ${customMedia.lessThan('lgDesktop')`
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+        text-align: center;
+        `}
     }
 
     span {
-        grid-column: 2 / 9;
+        grid-column: 1 / 8;
+        ${customMedia.lessThan('lgDesktop')`
+        grid-column: 1 / -1;
+        `}
     }
 
     .btn {
         grid-column: 9 / 12;
-        margin-left: 3rem;
+        margin-left: 1rem;
         margin-right: 3.1rem;
+        ${customMedia.lessThan('mdDesktop')`
+        grid-column: 1 / -1;
+        margin-left: 30%;
+        margin-right: 30%;
+        `}
     }
 
     // Tab Bottom Content
@@ -131,6 +156,9 @@ const TabContainer = styled.div`
         color: #999;
         padding: 0.8rem 1.2rem;
         text-align: center;
+        ${customMedia.lessThan('tablet')`
+            padding: 0.4rem 0rem;
+        `}
     }
 
     table tbody tr td:first-child {
