@@ -5,6 +5,7 @@
 
 ## Repsonsive in evey page:
 
+![Miniflix Overview2 Video Demo](public/demo/miniflix-2.gif)
 
 ## Available Scripts
 
