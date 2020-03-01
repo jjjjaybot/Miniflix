@@ -1,6 +1,6 @@
 The overview of what this website looks like:
 
-![Miniflix Overview Video Demo](demo/demo.gif)
+![Miniflix Overview Video Demo](public/demo/miniflix-1.gif)
 
 
 
