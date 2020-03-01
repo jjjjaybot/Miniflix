@@ -3,6 +3,7 @@ import Img from '../images/tab-1-pic.png';
 import styled from 'styled-components';
 import {Button} from './Button';
 import {generateMedia} from 'styled-media-query';
+import {Link} from 'react-router-dom';
 
 const TableContentOne = () => {
     return ( 
@@ -12,7 +13,9 @@ const TableContentOne = () => {
                 <div>
                 <span className="title" style={{marginBottom: '2rem'}}>If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.</span>
                 <br />
+                <Link className="btn" to="/choose-plan">
                 <Button style={{marginTop: '2rem'}}>try it now</Button>
+                </Link>
                 </div>
                 <img src={Img} />
             </div>

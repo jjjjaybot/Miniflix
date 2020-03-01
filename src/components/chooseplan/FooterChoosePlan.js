@@ -6,7 +6,7 @@ import {iosWorld} from 'react-icons-kit/ionicons/iosWorld';
 import {arrowSortedDown} from 'react-icons-kit/typicons/arrowSortedDown';
 import {generateMedia} from 'styled-media-query';
 
-class Footer extends Component {
+class FooterChoosePlan extends Component {
     state = { 
         langContent: false,
      }
@@ -20,7 +20,8 @@ class Footer extends Component {
     render() { 
         return ( 
             <FooterContainer>
-                <span style={{marginLeft: '10%', color:'#999'}}>Quesionts? &nbsp;<Link>Call 1-877-742-1335</Link></span>
+            <div className="footer-wrapper">
+                <span style={{marginLeft: '3rem', color:'#999',fontSize:'1rem'}}>Quesionts? &nbsp;<Link>Call 1-877-742-1335</Link></span>
                 <div className="footer-columns">
                 <ul>
                     <li>
@@ -57,40 +58,52 @@ class Footer extends Component {
                         </ul>
                     </div>
                     )}
+                    </div>
             </FooterContainer>
          );
     }
 }
  
-export default Footer;
+export default FooterChoosePlan;
 
 // Media
 const customMedia = generateMedia({
-    tablet: '740px'
+    bgTablet:'960px',
+    tablet: '740px',
 })
 
 // Footer
 
 const FooterContainer = styled.footer`
+    display: grid;
     justify-content: center;
-    background: rgba(0,0,0,0.8);
-    padding-top: 3rem;
-    padding-bottom : 6rem;
-    margin-top: 6rem;
+    background: #f3f3f3;
+    padding: 1.875rem 0;
+    margin-top: 10rem;
     position: relative;
+    border-top: 1px solid #e6e6e6;
     z-index: 5;
 
     .footer-columns {
         width: 80%;
-        margin: 1rem auto 0;
+        margin: 1rem 3rem 0 3rem;
         color:#999;
         font-size: 0.9rem;
         overflow: atuo;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 15.625rem);
+        grid-gap: 0.3rem;
         ${customMedia.lessThan('tablet')`
         grid-template-columns: repeat(2, 1fr);
         `}
+        ${customMedia.between('tablet','BgTablet')`
+        grid-template-columns: repeat(3, 10.625rem);
+    `};
+    }
+
+    .footer-wrapper {
+        margin: 0 auto;
+        padding: 1.25rem;
     }
 
     .footer-columns ul {
@@ -123,27 +136,28 @@ const FooterContainer = styled.footer`
         padding: 1rem;
         width: 8rem;
         display: grid;
-        margin-left: 10% !important;
+        margin-left: 3rem !important;
         grid-template-columns: repeat(3, 1fr);
-        margin: 2rem 0 1rem;
+        margin: 2rem 0 3rem;
         cursor: pointer;
         color:#999;
     }
 
     .lang-toggle{
-        margin-left: 10%;
+        margin-left: 3rem;
         position: absolute;
-        margin-top: -2rem;
+        margin-top: -4rem;
     }
 
     .lang-toggle ul{
-        background: var(--main-deep-dark);
+        background: transparent;
         width: 8rem;
         margin-left: 0em;
         border: 1px solid #333;
+        color: #999;
         &:hover{
             background: #0085ff; 
-            color: #fff;
+            color: #999;
         }
     }
 `

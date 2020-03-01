@@ -13,15 +13,17 @@ class Header extends Component {
         return ( 
             <HeaderComponent className="header-container">
                 <div className="header-top">
-                <Logo src={logo} />
+                <a href="/"><Logo src={logo} /></a>
                 <NavLink to="/login" className="signIn-btn">Sign In</NavLink>
                 </div>
                 <div className="header-content">
                 <Title>See what's next</Title>
                 <SubTitle>WATCH ANYWHERE, CANCEL ANYTIME.</SubTitle>
+                <Link to="/choose-plan">
                 <Button className="main-offer-btn" primary>try it now
                 <Icon className="Icon" icon={ic_keyboard_arrow_right} size={37} />
                 </Button>
+                </Link>
                 </div>
                                 
             </HeaderComponent>
@@ -61,13 +63,13 @@ const HeaderComponent = styled.div`
         line-height: normal;
         border-radius: 0.1875rem;
         font-size: 1rem;
-        background: var(--main-red);
+        background: var(--main-green);
         position: absolute;
         translate: transform(-50%, -50%);
         cursor: pointer;
         transition: background 0.2s ease-in;
         &:hover{
-            background: var(--main-red-hover);
+            background: var(--main-green-hover);
         }
 
         ${customMedia.lessThan('smTablet')`

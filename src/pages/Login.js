@@ -11,7 +11,7 @@ class Login extends Component {
         return ( 
             <div className="main-login-container">
                 <div className="header-top">
-                    <Logo className="logo" src={logo} alt="logo"/>
+                    <a href="/"><Logo className="logo" src={logo} alt="logo"/></a>
                 </div>
                 <LoginForm />
                 <LoginFooter />

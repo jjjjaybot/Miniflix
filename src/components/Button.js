@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
     display: inline-block; 
-    background: var(--main-red);
+    background: var(--main-green);
     text-transform: uppercase;
     border: none;
     outline: none;
@@ -16,6 +16,6 @@ export const Button = styled.button`
     transition: background 0.2s ease-in;
     cursor: pointer;
     &:hover{
-        background: var(--main-red-hover);
+        background: var(--main-green-hover);
         }
 `
