@@ -1,7 +1,9 @@
-The overview of what this website looks like:
 
-![Miniflix Overview Video Demo](demo/demo.gif)
+## The overview of what it looks like:
 
+![Miniflix Overview Video Demo](public/demo/miniflix-1.gif)
+
+## Repsonsive in evey page:
 
 
 ## Available Scripts
