@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "97506aac79116e667f8c109b7399b575",
+    "revision": "1c0a4aa43392cdc14f4a272ba372ceb1",
     "url": "/Miniflix/index.html"
   },
   {
-    "revision": "74878388de183043c5a3",
+    "revision": "6f7366176e13bdd1bbbf",
     "url": "/Miniflix/static/css/main.f9d12d42.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Miniflix/static/js/2.25a670ad.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "74878388de183043c5a3",
-    "url": "/Miniflix/static/js/main.87f8b545.chunk.js"
+    "revision": "6f7366176e13bdd1bbbf",
+    "url": "/Miniflix/static/js/main.9fb548ef.chunk.js"
   },
   {
     "revision": "aed45b97786e283cd2af",
