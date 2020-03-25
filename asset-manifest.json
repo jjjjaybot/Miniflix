@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/miniflix/static/css/main.80e03e5a.chunk.css",
+    "main.js": "/miniflix/static/js/main.e54c7176.chunk.js",
+    "main.js.map": "/miniflix/static/js/main.e54c7176.chunk.js.map",
+    "runtime-main.js": "/miniflix/static/js/runtime-main.1170b464.js",
+    "runtime-main.js.map": "/miniflix/static/js/runtime-main.1170b464.js.map",
+    "static/js/2.6176ca08.chunk.js": "/miniflix/static/js/2.6176ca08.chunk.js",
+    "static/js/2.6176ca08.chunk.js.map": "/miniflix/static/js/2.6176ca08.chunk.js.map",
+    "index.html": "/miniflix/index.html",
+    "precache-manifest.452aa7c99f934dd2615879558fa83c6e.js": "/miniflix/precache-manifest.452aa7c99f934dd2615879558fa83c6e.js",
+    "service-worker.js": "/miniflix/service-worker.js",
+    "static/css/main.80e03e5a.chunk.css.map": "/miniflix/static/css/main.80e03e5a.chunk.css.map",
+    "static/js/2.6176ca08.chunk.js.LICENSE.txt": "/miniflix/static/js/2.6176ca08.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/miniflix/static/media/bg.dc2411c9.jpg",
+    "static/media/logo.svg": "/miniflix/static/media/logo.4140e952.svg",
+    "static/media/tab-1-pic.png": "/miniflix/static/media/tab-1-pic.fab25bc3.png",
+    "static/media/tab-macbook.png": "/miniflix/static/media/tab-macbook.66c7c1fb.png",
+    "static/media/tab-tablet.png": "/miniflix/static/media/tab-tablet.dc986d81.png",
+    "static/media/tab-tv.png": "/miniflix/static/media/tab-tv.9f91203b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1170b464.js",
+    "static/js/2.6176ca08.chunk.js",
+    "static/css/main.80e03e5a.chunk.css",
+    "static/js/main.e54c7176.chunk.js"
+  ]
+}
