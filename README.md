@@ -1,7 +1,4 @@
-
-## The overview of what it looks like:
-
-## Repsonsive in evey page:
+## Go to https://jiazicai.github.io/Miniflix/ and see what it is like
 
 
 ## Available Scripts
